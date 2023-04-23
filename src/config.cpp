@@ -377,7 +377,7 @@ namespace config {
   audio_t audio {};
 
   stream_t stream {
-    10s,  // ping_timeout
+    7200s,  // ping_timeout
 
     APPS_JSON_PATH,
 
