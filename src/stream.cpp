@@ -1422,9 +1422,9 @@ namespace stream {
 
     auto ref = broadcast.ref();
     auto port = recv_ping(ref, socket_e::video, session->video.peer, config::stream.ping_timeout);
-    if (port < 0) {
-      return;
-    }
+    // if (port < 0) {
+    //   return;
+    // }
 
     // Enable QoS tagging on video traffic if requested by the client
     if (session->config.videoQosType) {
@@ -1447,9 +1447,9 @@ namespace stream {
 
     auto ref = broadcast.ref();
     auto port = recv_ping(ref, socket_e::audio, session->audio.peer, config::stream.ping_timeout);
-    if (port < 0) {
-      return;
-    }
+    // if (port < 0) {
+    //   return;
+    // }
 
     // Enable QoS tagging on audio traffic if requested by the client
     if (session->config.audioQosType) {
